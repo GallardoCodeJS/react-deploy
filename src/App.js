@@ -11,6 +11,8 @@ function App() {
         </p>
         <h2>Nachito sabeeeeeeeeeeeeee</h2>
         <p>Se cambio ruta del logo, esto tendria que estar funcionando</p>
+        <p>Se cambio ruta del logo, esto tendria que estar funcionando</p>
+        <p>Se cambio ruta del logo, esto tendria que estar funcionando</p>
         <a
           className="App-link"
           href="https://reactjs.org"
