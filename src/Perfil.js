@@ -5,7 +5,7 @@ import {
     Route,
     Link
 } from "react-router-dom";
-import Inicio from './Inicio.js';
+import App from './App.js';
 import io2 from './img/io.jpg';
 import cruz from './img/x2.png';
 
@@ -16,7 +16,7 @@ function Perfil() {
         <Route>
             <div className="Perfil">
                 <div className="PerfilAtras">
-                    <Link to="/Inicio"><img src={cruz} alt="Equis" /></Link>
+                    <Link to="/App"><img src={cruz} alt="Equis" /></Link>
                     <h1>-Ignacio Gallardo Leal-</h1>
                 </div>
 
@@ -81,8 +81,8 @@ function Perfil() {
             </div>
 
             <Switch>
-                <Router path="/Inicio">
-                    <Inicio />
+                <Router path="/App">
+                    <App />
                 </Router>
             </Switch>
         </Route>

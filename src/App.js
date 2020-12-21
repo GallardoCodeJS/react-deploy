@@ -29,14 +29,14 @@ function App() {
         <Link to="/Perfil"><div className="d">
           <img className="imgdiv" src={Foto} alt="Nachito" />
         </div></Link>
-        <Link to="/Curriculum"><div className="d">
+        <Link to="/Perfil"><div className="d">
           <img className="imgdiv" src={Foto2} alt="Nachito" />
         </div></Link>
         <Link to="/Perfil"><div className="d">
-          <img className="imgdiv" src="./img/io.jpg" alt="Nachito" />
+          <img className="imgdiv" src={Foto2} alt="Nachito" />
         </div></Link>
         <Link to="/Perfil"><div className="d">
-          <img className="imgdiv" src="./img/io.jpg" alt="Nachito" />
+          <img className="imgdiv" src={Foto2} alt="Nachito" />
         </div></Link>
       </div>
 
