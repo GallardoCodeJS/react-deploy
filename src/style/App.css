@@ -5,10 +5,10 @@ html, body {
   background-size: cover;
   z-index: 5;
 }
-/*
+
 body{
   background-image: url("../img/fondo1.jpg");/* Imagen de fondo */
-/*}*/
+}
 
 #container {
   display: flex;
