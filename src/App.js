@@ -4,6 +4,10 @@ import './style/Perfil.css';
 import Perfil from './Perfil.js';
 import Curriculum from './Curriculum.js';
 
+/* Importa las fotos */
+import Foto from './img/caca.jpg';
+import Foto2 from './img/io.jpg';
+
 import {
   BrowserRouter as Router,
   Switch,
@@ -22,10 +26,10 @@ function Inicio() {
 
       <div id="container">
         <Link to="/Perfil"><div className="d">
-          <img className="imgdiv" src="./img/io.jpg" alt="Nachito" />
+          <img className="imgdiv" src={Foto} alt="Nachito" />
         </div></Link>
         <Link to="/Curriculum"><div className="d">
-          <img className="imgdiv" src="./img/io.jpg" alt="Nachito" />
+          <img className="imgdiv" src={Foto2} alt="Nachito" />
         </div></Link>
         <Link to="/Perfil"><div className="d">
           <img className="imgdiv" src="./img/io.jpg" alt="Nachito" />
