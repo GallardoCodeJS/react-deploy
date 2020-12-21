@@ -3,6 +3,7 @@ html, body {
   margin: 0;
   padding: 0;
   background-size: cover;
+  z-index: 5;
 }
 /*
 body{
