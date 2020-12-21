@@ -2,7 +2,7 @@ import './style/App.css';
 import './style/Perfil.css';
 
 import Perfil from './Perfil.js';
-import Curriculum from './Curriculum1.js';
+import Curriculum from './Curriculum.js';
 
 import {
   BrowserRouter as Router,
