@@ -1,0 +1,245 @@
+.Perfil{
+    position: absolute; /* Pone el DIV encima*/
+    flex-direction: row;
+    /*border:3px solid black; */
+    height: fit-content;
+    opacity: 100%;
+    left: 5%;
+    width: 90%;
+    top: 0;
+    /* Sombras */
+    box-shadow: 0px 0px 50px 15px grey;
+    z-index: 4;
+    /* Imagen */
+    background-image: url("../img/fondo3.jpg");/* Imagen de fondo */
+    background-size: 100%;
+}
+
+.Perfil > div{
+    position: relative;
+}
+
+.PerfilAtras{
+    top: 0;
+    display: flex;
+    flex-direction: row;
+}
+
+/* Imagen de la x*/
+.PerfilAtras img{
+    width: 80px;
+    padding-top: 0px;
+    margin-left: 15px;
+    background-color: transparent;    
+    /* timepo y name de animacion*/
+    animation:spin 10s linear infinite;
+}
+/* Animation configure */
+@keyframes spin { 
+    25% { 
+        -webkit-transform: rotate(90deg); 
+        transform:rotate(90deg); 
+    }
+    50% {
+        -webkit-transform: rotate(180deg); 
+        transform:rotate(180deg);
+    }
+    75%{
+        -webkit-transform: rotate(270deg); 
+        transform:rotate(270deg);
+    }
+    100%{
+        -webkit-transform: rotate(360deg); 
+        transform:rotate(360deg);
+    }
+}
+/* Hover de la equis */
+.PerfilAtras img:hover{
+    box-shadow: 0px 0px 10px 5px grey;
+}
+
+.PerfilAtras h1{
+    font-family: "Times New Roman", Times, serif;
+    text-decoration: underline black;
+    text-align: left;
+    font-size: 45px;
+    color: red;
+    padding-left: 27%;
+}
+
+/* DOnde esta la descripcion del curriculum*/
+.PerfilCuerpo {
+    position: absolute;
+    padding-top: 5px;
+    padding-bottom: 10px;
+    padding-left: 42%;
+    top: 0;
+}
+
+/* Foto principal del usuario*/
+.PerfilCuerpo img {
+    position: relative;
+    border: 1px solid black;
+    box-shadow: 0px 0px 50px 5px grey;
+    border-radius: 80%;
+    max-width: 25%;
+}
+
+.PerfilCuerpo img:hover {
+    filter: brightness(105%);
+}
+
+/* Div de curriculum*/
+.Perfilinfo-left{
+    position: absolute;
+    float: left;
+    /*border: 1px solid black;*/
+    width: 42%;
+    box-shadow: 0px 0px 50px 5px white;    
+    z-index: 4;
+    margin-left: 5%;
+    border-radius: 5%;
+}
+
+.Perfilinfo-left h2{    
+    font-family: "Times New Roman", Times, serif;
+    text-decoration: underline red;
+    text-align: center;
+}
+
+.Perfilinfo-right h2{
+    font-family: "Times New Roman", Times, serif;
+    text-decoration: underline red;
+    text-align: center;
+}
+
+.Perfilinfo-center1 h2{    
+    font-family: "Times New Roman", Times, serif;
+    text-decoration: underline red;
+    text-align: center;
+}
+.Perfilinfo-center2 h2{    
+    font-family: "Times New Roman", Times, serif;
+    text-decoration: underline red;
+    text-align: center;
+}
+
+.Perfilinfo-left p{
+    padding-left: 10px;
+    text-align: left;
+    font-family: "Times New Roman", Times, serif;
+}
+
+.Perfilinfo-right p{
+    text-align: left;
+    padding-left: 10px;
+    font-family: "Times New Roman", Times, serif;
+}
+
+.Perfilinfo-right{
+    position: absolute;
+    box-shadow: 0px 0px 50px 5px white;
+    /*border: 1px solid black;*/
+    margin-top: 0;
+    margin-left: 5%;
+    margin-bottom: 3px;
+    border-radius: 5%;
+    float: left;    
+    width: 42%;        
+    z-index: 4;
+}
+
+.Perfilinfo-left h4{
+    text-align: center;
+    text-decoration: underline black;
+}
+.Perfilinfo-right h4{
+    text-align: center;
+    padding-left: 10px;
+    text-decoration: underline black;
+}
+.Perfilinfo-center1 h4{
+    text-align: center;
+    text-decoration: underline black;
+}
+.Perfilinfo-center2 h4{
+    text-align: center;
+    text-decoration: underline black;
+}
+
+.Perfilinfo-center1{
+    position: absolute;
+    float: left;
+    box-shadow: 0px 0px 50px 5px white;
+    /*border: 1px solid black;*/
+    margin-top: 0;
+    margin-left: 10%;
+    width: 80%;
+    z-index: 4;
+    margin-bottom: 5px;
+    border-radius: 5%;
+}
+
+.Perfilinfo-center1 p{
+    text-align: center;
+    font-family: "Times New Roman", Times, serif;
+}
+
+.Perfilinfo-center2{
+    position: absolute;
+    float: left;
+    box-shadow: 0px 0px 50px 5px white;
+    /*border: 1px solid black;*/
+    margin-top: 0;
+    margin-left: 10%;
+    border-radius: 5%;
+    padding-left: 10px;
+    width: 80%;
+    z-index: 4;
+    margin-bottom: 5px;
+}
+
+.Perfilinfo-left:hover{
+    box-shadow: 0px 0px 25px 1px #DCDCDC;
+}
+.Perfilinfo-right:hover{
+    box-shadow: 0px 0px 25px 1px #DCDCDC;
+}
+.Perfilinfo-center1:hover{
+    box-shadow: 0px 0px 25px 1px #DCDCDC;
+}
+.Perfilinfo-center2:hover{
+    box-shadow: 0px 0px 25px 1px #DCDCDC;
+}
+
+.Divboton{
+    position: absolute;
+    z-index: 4;
+    display: flex;
+    flex-direction: row;
+    bottom: 0;
+    left: 48%;
+    width: 10%;
+}
+
+/* BOTON ATRAS al final*/
+.Perfilinfo-center2 button{
+    margin-left: 45%;
+    margin-bottom: 2%;
+}
+
+.Perfilinfo-center2 button {
+    border: 2px solid red;
+    box-shadow: 0px 0px 5px 1px grey;
+    border-radius: 100px;
+    left: 1500px;
+    width: 100px;
+    height: 30px;
+}
+
+.Perfilinfo-center2 button:hover{
+    background-color: yellowgreen;
+    box-shadow: 0px 0px 10px 2px grey;
+    color: blue;
+    border: 2px solid black;
+}

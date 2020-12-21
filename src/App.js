@@ -1,29 +1,60 @@
-import logo from './img/logo.svg';
 import './style/App.css';
+import './style/Perfil.css';
 
-function App() {
+import Perfil from './Perfil.js';
+import Curriculum from './Curriculum1.js';
+
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+  Link
+} from "react-router-dom";
+
+import { AnimatedSwitch } from 'react-router-transition';
+
+
+function Inicio() {
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <h2>Nachito sabeeeeeeeeeeeeee</h2>
-        <p>Se cambio ruta del logo, esto tendria que estar funcionando</p>
-        <p>Se cambio ruta del logo, esto tendria que estar funcionando</p>
-        <p>Se cambio ruta del logo, esto tendria que estar funcionando</p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
+
+    <Router>
+
+      <div id="container">
+        <Link to="/Perfil"><div className="d">
+          <img className="imgdiv" src="./img/io.jpg" alt="Nachito" />
+        </div></Link>
+        <Link to="/Curriculum"><div className="d">
+          <img className="imgdiv" src="./img/io.jpg" alt="Nachito" />
+        </div></Link>
+        <Link to="/Perfil"><div className="d">
+          <img className="imgdiv" src="./img/io.jpg" alt="Nachito" />
+        </div></Link>
+        <Link to="/Perfil"><div className="d">
+          <img className="imgdiv" src="./img/io.jpg" alt="Nachito" />
+        </div></Link>
+      </div>
+
+      <Switch >
+        <AnimatedSwitch
+          atEnter={{ opacity: 1.25 }}
+          atLeave={{ opacity: 0 }}
+          atActive={{ opacity: 2 }}
         >
-          Learn React
-        </a>
-      </header>
-    </div>
+          <Route exact path="/Perfil">
+            <Perfil />
+          </Route>
+
+          <Route exact path="/Curriculum">
+            <Curriculum />
+          </Route>
+
+        </AnimatedSwitch>
+      </Switch>
+
+    </Router>
+
   );
 }
 
-export default App;
+export default Inicio;
