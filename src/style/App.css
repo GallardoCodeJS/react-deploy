@@ -3,6 +3,7 @@ html, body {
   margin: 0;
   padding: 0;
   background-size: cover;
+  background-image: url("../img/fondo1.jpg");/* Imagen de fondo */
 }
 
 #container {
