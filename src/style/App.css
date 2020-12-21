@@ -4,10 +4,10 @@ html, body {
   padding: 0;
   background-size: cover;
 }
-
+/*
 body{
   background-image: url("../img/fondo1.jpg");/* Imagen de fondo */
-}
+/*}*/
 
 #container {
   display: flex;

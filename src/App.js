@@ -1,6 +1,7 @@
 import './style/App.css';
 import './style/Perfil.css';
 
+/* Importa archivos JS*/
 import Perfil from './Perfil.js';
 import Curriculum from './Curriculum.js';
 
