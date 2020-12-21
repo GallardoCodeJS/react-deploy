@@ -19,7 +19,7 @@ import {
 import { AnimatedSwitch } from 'react-router-transition';
 
 
-function Inicio() {
+function App() {
 
   return (
 
@@ -62,4 +62,4 @@ function Inicio() {
   );
 }
 
-export default Inicio;
+export default App;
